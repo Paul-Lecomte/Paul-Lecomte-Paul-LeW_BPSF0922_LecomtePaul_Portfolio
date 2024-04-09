@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Portfolio Website" content="Lecomte Paul portfolio website">
+    <title>Lecomte Paul | Portfolio</title>
+</head>
+<body>
+    <main>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <!--Header----------------------------------------------------------------------->
+        <header id="main-header">
+            <div id="title-page">
+                <h2>
+                    PORTFOLIO
+                </h2>
+            </div>
+            <div class="container-button">
+                <div class="button-contact" onclick="contactFunction()">CONTACT</div>
+            </div>
+        </header>
+
+        <!--Main content-------------------------------------------------------------------------->
+        <div class="main-content">
+            <h1>
+                Lecomte Paul
+            </h1>
+            <p>
+                Hello ! My name is Paul Lecomte, passionate student in web development. Currently studying, I am determined to acquire the skills necessary to excel in the field of web development and programming.
+            </p>
+        </div>
+
+        <!--Connaissance----------------------------------------------------------------------------->
+        <div class="knowledge">
+            <h3>
+                Knowledge
+            </h3>
+            <div class="container-knowledge">
+                <div class="accordion">
+                    <div class="accordion-content">
+                        <header>
+                            <span class="accordion-title">
+                                Programing language
+                            </span>
+                            <i class="fa-solid fa-plus"></i>
+                        </header>
+                        <ul class="description">
+                            <li>
+                                <img src="assets/html-5.svg" alt="HTML logo">
+                            </li>
+                            <li>
+                                <img src="assets/css-3.svg" alt="CSS logo">
+                            </li>
+                            <li>
+                                <img src="assets/javascript.svg" alt="JavaScript logo">
+                            </li>
+                        </ul>
+                    </div>
+                
+                    <div class="accordion-content">
+                        <header>
+                            <span class="accordion-title">
+                                Tools
+                            </span>
+                            <i class="fa-solid fa-plus"></i>
+                        </header>
+                        <ul class="description">
+                            <li>
+                                <img src="assets/git.svg" alt="git logo">
+                            </li>
+                            <li>
+                                <img src="assets/webstorm.svg" alt="webstorm logo">
+                            </li>
+                            <li>
+                                <img src="assets/vscode.svg" alt="assets logo">
+                            </li>
+                        </ul>
+                    </div>                
+                    <div class="accordion-content">
+                        <header>
+                            <span class="accordion-title">
+                                Other Skills
+                            </span>
+                            <i class="fa-solid fa-plus"></i>
+                        </header>
+                        <p class="description">
+                            Proficient team player with very good communication and debugging skills, i also have a base knowledge in cyber security
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Projects------------------------------------------------------------------------------------->
+        <div class="projects">
+            <div class="container-title-project">
+                <h3>
+                    Projects
+                </h3>
+                <img id="stop" onclick="stopAutoplay()" src="assets/pause-circle.svg" alt="bouton pause">
+            </div>
+            <div class="inside-project">
+                <div class="arrow-left" onclick="nextSlide(-1)"></div>
+                <div class="container-projects project-1">
+                    <div class="main-content-projects">
+                        <h4>
+                            WolfFitness
+                        </h4>
+                        <p>
+                            WolfFitness is a social fitness app designed to connect people.
+                        </p>
+                        <div class="project-links">
+                            <div class="button">
+                                <a href="wolfitness.html">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-assets">
+                        <img id="project-1-img" src="./assets/start.png" alt="project image 1">
+                    </div>
+                </div>
+                
+                <div class="container-projects">
+                    <div class="main-content-projects">
+                        <h4>
+                            Bliss Burger
+                        </h4>
+                        <p>
+                            Bliss Burger is a website restaurant project that i created.
+                        </p>
+                        <div class="project-links">
+                            <div class="button">
+                                <a href="blissburger.html">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-assets">
+                        <img src="./assets/blissburger_img.jpg" alt="project image 1">
+                    </div>
+                </div>
+                <div id="next" class="arrow-right" onclick="nextSlide(1)"></div>
+            </div>
+        </div>
+
+
+        <!--Contact------------------------------------------------------------------------------------------------------------->
+        <div class="contact contact-logo">
+            <h3>
+                Contact
+            </h3>
+            <div class="container-contact">
+                <a href="https://github.com/Paul-Lecomte/" target="_blank" id="github">
+                    <img src="./assets/github.png" alt="Github logo">
+                </a>
+                <a href="https://www.behance.net/paullecomte1" target="_blank" id="behance">
+                    <img src="./assets/behance.png" alt="Behance logo">
+                </a>
+                <a href="https://ch.linkedin.com/in/paul-lecomte-539b46216" target="_blank" id="linkedin">
+                    <img src="./assets/linkedin.png" alt="Linkedin logo">
+                </a>
+                <a href="mailto:lecomtepaulvd@gmail.com" target="_blank" id="email">
+                    <img src="./assets/email_logo.png" alt="Email logo">
+                </a>
+            </div>
+        </div>
+        <!--Contact form------------------------------------------------------------------------------------------------------------->
+        <div id="form-container">
+            <form>
+                <div class="container-contact">
+                    <div class="contact">
+                        <div class="contact-title">
+                            <h2>
+                                Contacter moi
+                            </h2>
+                            <span class="underline-title"></span>
+                        </div>
+                        <div class="form-container">
+                        <div class="form-contact">
+                            <div class="form-firstname submit">
+                                <p>
+                                    NOM
+                                </p>
+                                <div id="message1" class="message"></div>
+                                <input id="submit-form-firstname" type="text" name="firstname" pattern="[A_Za-z]{2,}" required>
+                            </div>
+                            <div class="form-surname submit">
+                                <p>
+                                    PRENOM
+                                </p>
+                                <div id="message2" class="message"></div>
+                                <input id="submit-form-surname" type="text" name="surname" pattern="[A_Za-z]{2,}" required>
+                            </div>
+                            <div class="form-adress submit">
+                                <p>
+                                    ADRESSE
+                                </p>
+                                <div id="message3" class="message"></div>
+                                <input id="submit-form-adress" type="text" name="adress" required>
+                            </div>
+                            <div class="form-postal submit">
+                                <p>
+                                    CODE POSTAL
+                                </p>
+                                <div id="message4" class="message"></div>
+                                <input id="submit-form-postal" type="text" name="postal" pattern="[0-9]{4,}" required>
+                            </div>
+                            <div class="form-city submit">
+                                <p>
+                                    VILLE
+                                </p>
+                                <div id="message5" class="message"></div>
+                                <input id="submit-form-city" type="text" name="city" pattern="[A_Za-z]{2,}" required>
+                            </div>
+                            <div class="form-email submit">
+                                <p>
+                                    EMAIL
+                                </p>
+                                <div id="message6" class="message"></div>
+                                <input id="submit-form-email" type="text" name="email" required>
+                            </div>
+                            <div class="form-phone submit">
+                                <p>
+                                    NUMERO DE TELEPHONE
+                                </p>
+                                <div id="message7" class="message"></div>
+                                <input id="submit-form-phone" type="text" name="phone" pattern="[0-9]{2,}" required>
+                            </div>
+                            <div class="form-project submit">
+                                <p>
+                                    DECRIVEZ VOTRE DEMANDE
+                                </p>
+                                <textarea id="text-contact" name="projet" id="form-projet" pattern="[A_Za-z0-9]{2,}" cols="30" rows="10"></textarea>
+                            </div>
+                            <button class="button-form">Envoyer</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="./js/portfolio.js"></script>
+</body>
+</html>
