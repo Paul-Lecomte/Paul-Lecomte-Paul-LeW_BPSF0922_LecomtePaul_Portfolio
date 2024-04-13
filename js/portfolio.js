@@ -100,6 +100,7 @@ let postal = document.getElementById('submit-form-postal')
 let city = document.getElementById('submit-form-city')
 let email = document.getElementById('submit-form-email')
 let phone = document.getElementById('submit-form-phone')
+let textArea = document.getElementById('text-contact')
 
 
 //tous les regex qui seront utilisé
@@ -223,5 +224,17 @@ phone.addEventListener('blur', function (){
         console.log(false)
         style(phone, 'red')
         document.getElementById("message7").textContent = "le numéro est invalide"
+    }
+})
+
+textArea.addEventListener('blur', function(){
+    if(textArea.value === ''){
+        console.log('empty')
+        style(textArea, 'orange')
+        document.getElementById("message8").textContent = 'le champs doit être remplis'
+    } else{
+        console.log(true)
+        style(textArea, 'green')
+        document.getElementById("message8").textContent = "Merci d'avoir rentrer votre demande"
     }
 })
