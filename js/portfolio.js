@@ -56,13 +56,30 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 //controle autoplay
-let autoplay = setInterval(function(){
+let autoplayCheck = true
+console.log(autoplayCheck)
+
+let autoplay = setInterval(function autoplayPlay(){
     document.getElementById("next").click()
 }, 6000)
 
+//fonction de pause & play
 function stopAutoplay(){
-    clearInterval(autoplay)
+    let image = document.getElementById('stop')
+    if (autoplayCheck === false){
+        autoplayCheck = true
+        autoplay = setInterval(function autoplayPlay(){
+            document.getElementById("next").click()
+        }, 6000)
+        image.src = "assets/pause-circle.svg"
+    } else {
+        image.src = "assets/play-circle.svg"
+        clearInterval(autoplay)
+        autoplayCheck = false
+    }
+    console.log(autoplayCheck)
 }
+
 
 // controle pour + ou - des slides
 function nextSlide(n) {
