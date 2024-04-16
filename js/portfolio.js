@@ -121,7 +121,8 @@ let textArea = document.getElementById('text-contact')
 
 
 //tous les regex qui seront utilisé
-let regExName = /^[A-Za-z]+-?[A-Za-z]+$/
+let regExName = /^[A-Za-z]*\s?[A-Za-z]+$/
+let regExAdress = /^[#.0-9a-zA-Z\s,-]+$/
 let regExEmail = /^[A-Za-z0-9\-.,_]+@[A-Za-z]+\.[a-z]{2,}$/
 let regExPhone = /^(\+|00)?(41)?\s?(0?[0-9][0-9])\s?.?([0-9]{2})?([0-9]{3})\s?.?([0-9]{2})\s?.?([0-9]{2})$/
 let regExPostal = /^[0-9]{4,}$/
@@ -165,7 +166,7 @@ firstName.addEventListener('blur', function (){
 })
 
 adress.addEventListener('blur', function (){
-    if (regExName.test(adress.value)){
+    if (regExAdress.test(adress.value)){
         console.log(true)
         style(adress, 'green')
         document.getElementById("message3").textContent = "l'adresse est valide"
