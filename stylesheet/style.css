@@ -326,6 +326,10 @@ body {
         align-items: center;
     }
 
+    .projects h3{
+        margin-right: 5rem;
+    }
+
     .projects h3, #stop{
         width: 19%;
     }
@@ -484,6 +488,10 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        #title-page-wolf h1{
+            margin-bottom: 0;
         }
 
     /*descriptif---------------------------------------------------------------*/
@@ -758,6 +766,10 @@ body {
 
 
     /*Projects----------------------------------------------------------*/
+        .container-title-project h3{
+            margin-right: 4rem;
+        }
+        
         .arrow-left{
             margin-left: 25px;
         }
@@ -772,20 +784,26 @@ body {
     
         .main-content-projects{
             text-align: center;
+            width: 100%;
         }
 
         .main-content-projects h4{
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 
         .main-content-projects p{
-            font-size: 2rem;
+            font-size: 1rem;
         }
 
         .project-assets{
-            width: 50%;
+            width: 80%;
         }
         #project-1-img{
+            width: 50%;
+        }
+
+        .project-links{
+            margin: auto;
             width: 50%;
         }
 
@@ -872,6 +890,10 @@ body {
 
         .container-title-project h3{
             width: 45%;
+        }
+
+        #stop{
+            width: 15%;
         }
 
         .container-title-project{
