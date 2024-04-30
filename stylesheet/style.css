@@ -305,7 +305,8 @@ body {
 
     .description li{
         width: 30%;
-        height: 100px;
+        height: 120px;
+        padding: 5%;
     }
 
 
@@ -437,7 +438,7 @@ body {
     .project-assets img, video{
         object-position: 0 0;
         overflow: hidden;
-        object-fit: cover;
+        object-fit: scale-down;
         max-height: 700px;
         width: 75%;
         align-items: center;
@@ -460,7 +461,7 @@ body {
     }
 
 
-/*WolfFitness page------------------------------------------------------------*/
+/*Project page------------------------------------------------------------*/
     /*header----------------------------------------------------------------*/
         header{
             display: flex;
@@ -549,7 +550,7 @@ body {
         #container-image-expand{
             position: absolute;
             width: 100%;
-            top: 20%;
+            top: 5%;
             display: none;
             justify-content: center;
             align-items: center;
@@ -574,7 +575,7 @@ body {
 
         #container-image-expand img{
             width: 50%;
-            max-height: 1200px;
+            height: 90vh;
             object-fit: contain;
         }
 
@@ -648,8 +649,9 @@ body {
     }
 
     .form-contact input, textarea{
+        text-align: center;
         background: none;
-        color: black;
+        color: white;
         font-size: 120%;
         border: 2px solid  white;
         border-top-left-radius: 20px;

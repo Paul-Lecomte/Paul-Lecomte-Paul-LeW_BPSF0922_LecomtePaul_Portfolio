@@ -57,7 +57,6 @@ showSlides(slideIndex);
 
 //controle autoplay
 let autoplayCheck = true
-console.log(autoplayCheck)
 
 let autoplay = setInterval(function autoplayPlay(){
     document.getElementById("next").click()
@@ -77,7 +76,6 @@ function stopAutoplay(){
         clearInterval(autoplay)
         autoplayCheck = false
     }
-    console.log(autoplayCheck)
 }
 
 
