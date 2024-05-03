@@ -132,16 +132,13 @@ function style(input, color){
 
 //check l'input de l'utilisateur après qu'il soit sortis du champ
 surName.addEventListener('blur', function (){
-    if (regExName.test(surName.value)){
-        console.log(true)
+    if (regExName.test(surName.value)){        
         style(surName, 'green')
         document.getElementById("message2").textContent = 'This name is valid'
     } else if (surName.value === '') {
-        console.log('empty')
         style(surName, 'orange')
         document.getElementById("message2").textContent = 'This field need to be filled'
     } else {
-        console.log(false)
         style(surName, 'red')
         document.getElementById("message2").textContent = 'This name is invalid'
     }
@@ -149,15 +146,12 @@ surName.addEventListener('blur', function (){
 
 firstName.addEventListener('blur', function (){
     if (regExName.test(firstName.value)){
-        console.log(true)
         style(firstName, 'green')
         document.getElementById("message1").textContent = 'This name is valid'
     } else if (firstName.value === '') {
-        console.log('empty')
         style(firstName, 'orange')
         document.getElementById("message1").textContent = 'This field need to be filled'
     } else {
-        console.log(false)
         style(firstName, 'red')
         document.getElementById("message1").textContent = 'This name is invalid'
     }
@@ -165,15 +159,12 @@ firstName.addEventListener('blur', function (){
 
 adress.addEventListener('blur', function (){
     if (regExAdress.test(adress.value)){
-        console.log(true)
         style(adress, 'green')
         document.getElementById("message3").textContent = "This address is valid"
     } else if (adress.value === '') {
-        console.log('empty')
         style(adress, 'orange')
         document.getElementById("message3").textContent = 'This field need to be filled'
     } else {
-        console.log(false)
         style(adress, 'red')
         document.getElementById("message3").textContent = "This address is invalid"
     }
@@ -181,15 +172,12 @@ adress.addEventListener('blur', function (){
 
 postal.addEventListener('blur', function (){
     if (regExPostal.test(postal.value)){
-        console.log(true)
         style(postal, 'green')
         document.getElementById("message4").textContent = "This postal code is valid"
     } else if (postal.value === '') {
-        console.log('empty')
         style(postal, 'orange')
         document.getElementById("message4").textContent = 'This field need to be filled'
     } else {
-        console.log(false)
         style(postal, 'red')
         document.getElementById("message4").textContent = "This postal code is invalid"
     }
@@ -197,15 +185,12 @@ postal.addEventListener('blur', function (){
 
 city.addEventListener('blur', function (){
     if (regExName.test(city.value)){
-        console.log(true)
         style(city, 'green')
         document.getElementById("message5").textContent = "This town name is valid"
     } else if (city.value === '') {
-        console.log('empty')
         style(city, 'orange')
         document.getElementById("message5").textContent = 'This field need to be filled'
     } else {
-        console.log(false)
         style(city, 'red')
         document.getElementById("message5").textContent = "This town name is invalid"
     }
@@ -213,15 +198,12 @@ city.addEventListener('blur', function (){
 
 email.addEventListener('blur', function (){
     if (regExEmail.test(email.value)){
-        console.log(true)
         style(email, 'green')
         document.getElementById("message6").textContent = "This email is valid"
     } else if (email.value === '') {
-        console.log('empty')
         style(email, 'orange')
         document.getElementById("message6").textContent = 'This field need to be filled'
     } else {
-        console.log(false)
         style(email, 'red')
         document.getElementById("message6").textContent = "This email is invalid"
     }
@@ -229,15 +211,12 @@ email.addEventListener('blur', function (){
 
 phone.addEventListener('blur', function (){
     if (regExPhone.test(phone.value)){
-        console.log(true)
         style(phone, 'green')
         document.getElementById("message7").textContent = "This phone number is valid"
     } else if (phone.value === '') {
-        console.log('empty')
         style(phone, 'orange')
         document.getElementById("message7").textContent = 'This field need to be filled'
     } else {
-        console.log(false)
         style(phone, 'red')
         document.getElementById("message7").textContent = "This phone number is invalid"
     }
@@ -245,11 +224,9 @@ phone.addEventListener('blur', function (){
 
 textArea.addEventListener('blur', function(){
     if(textArea.value === ''){
-        console.log('empty')
         style(textArea, 'orange')
         document.getElementById("message8").textContent = 'This field need to be filled'
     } else{
-        console.log(true)
         style(textArea, 'green')
         document.getElementById("message8").textContent = "Thank you"
     }
